@@ -10,11 +10,7 @@ import (
 	"os"
 )
 
-// var palette = []color.Color{color.White, color.Black}
-// var palette = []color.Color{color.RGBA{0x00, 0xff, 0x00, 0xff}, color.Black}
-var palette = []color.Color{color.Black, color.RGBA{0x00, 0xff, 0x00, 0xff}}
-
-//var palette = []color.RGBA{0xRR, 0xGG, 0xBB, 0xff}
+var palette = []color.Color{color.RGBA{0x00, 0xff, 0x00, 0xff}, color.Black}
 
 const (
 	whiteIndex = 0 // first color in palette
@@ -24,6 +20,7 @@ const (
 func main() {
 	lissajous(os.Stdout)
 }
+
 func lissajous(out io.Writer) {
 	const (
 		cycles  = 5
