@@ -28,3 +28,8 @@ func main() {
 	// "100"; does not call String
 	fmt.Println(float64(c)) // "100"; does not call String
 }
+
+//
+//func main() {
+//
+//}
