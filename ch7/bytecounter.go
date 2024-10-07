@@ -15,6 +15,12 @@ func main() {
 	fmt.Println(c) // "5", = len("hello")
 	c = 0          // reset the counter
 	var name = "Dolly"
-	var _, _ = fmt.Fprintf(&c, "hello, %s", name)
+	fmt.Fprintf(&c, "hello, %s", name)
 	fmt.Println(c) // "12", = len("hello, Dolly")
+
+	var ch interface{}
+	ch = 1
+	fmt.Printf("type : %T, value : %[1]v \n", ch)
+	ch = "ch"
+	fmt.Printf("type : %T, value : %[1]v \n", ch)
 }
